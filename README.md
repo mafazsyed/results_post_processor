@@ -72,10 +72,12 @@ The Windows Terminal/Shell window displays any errors encountered and prints rel
 
 ## Updates & Version History
 - **Version 1.0.0:** Initial Release
+
 - **Version 1.1.0:**
     - Updated graphical user interface to a modern style
     - Other user interface and quality of life updates
     - Fixed – the application’s features only worked when 28 files were in the input folder
+
 - **Version 1.2.0 (In Development / Awaiting Release):**
     - The equation to calculate the MFS was fixed before, however, could now be chosen by the user
     - The radius to consider could be changed by the user now
