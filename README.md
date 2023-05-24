@@ -1,0 +1,69 @@
+# ResultsPostProcessor User Guide
+
+# Results Post Processor User Guide
+
+## Table of Contents
+- [Introduction](#introduction)
+    - [About the Application](#about-the-application)
+    - [System Requirements](#system-requirements)
+    - [Installation Guide](#installation-guide)
+    - [Overview of User Interface](#overview-of-user-interface)
+- [Features & Functionality](#features--functionality)
+    - [Average Minimum Principal Strain for Each Node](#average-minimum-principal-strain-for-each-node)
+    - [Average Minimum Principal Strain & Minimum Femur Strength When Considering Each Node as Center Node](#average-minimum-principal-strain--minimum-femur-strength-when-considering-each-node-as-center-node)
+- [Troubleshooting](#troubleshooting)
+- [Updates & Version History](#updates--version-history)
+
+## Introduction
+
+### About the Application
+The results processor is designed to streamline and mass-analyze the nodal results (of finite element analysis of a femur but could be used for many other purposes). The application is capable of processing and averaging nodal results (as each node contains results from several elements). This information (result of each node) could be fed back into the application to produce the average minimum principal strain and, subsequently, the Minimum Femur Strength when considering each node as the center node of a 3mm radius circle.
+
+### System Requirements
+The application only runs on Windows platforms, as of the latest version.
+
+### Installation Guide
+Download and run the ResultsPotProcessor.exe file from the GitHub page. No installation is required.
+
+### Overview of User Interface
+Figure 1 shows the user interface of the application with reference to each chapter for the feature’s user guide.
+
+## Features & Functionality
+The following results post processing features are available:
+1. Determine the average Minimum Principal Strain (or any other value) for each node (from multiple values for each node).
+2. Determine the average Minimum Principal Strain and Minimum Femur Strength (MFS) (or any other value) when considering each node as the center node of a 3mm radius circle.
+
+The input file format for each function is outlined in their respective sections.
+
+### Average Minimum Principal Strain for Each Node
+
+#### Calculate Average Minimum Principal Strain for Each Node
+
+To calculate the average minimum principal strain for each node (where each node has one or more result values), first specify the input folder with all files (TXT or any other text-editor format) containing the input nodal results data in the format specified below.
+
+#### Input Nodal Results File Format
+
+The input file should contain, on each line, the node number followed by its result (average minimum principal strain) value. Note that a heading should not be included, and the nodes do not have to be in chronological order. There is no limit on the number of nodes or on the number of files simultaneously processed (number of files in the input folder).
+
+### Average Minimum Principal Strain & Minimum Femur Strength When Considering Each Node as Center Node
+
+#### Calculate Average Minimum Principal Strain & Minimum Femur Strength When Considering Each Node as Center Node
+
+To calculate the average minimum principal strain and Minimum Femur Strength, first specify the input folder with all files (TXT or any other text-editor format) containing the input nodal results and coordinate data in the format specified below.
+
+#### Input Nodal Results & Coordinates File Format
+
+The input file should contain, on each line, the node number followed by its result (averaged minimum principal strain) and its coordinates. Note that a heading should not be included, and the nodes do not have to be in chronological order. There is no limit on the number of nodes or on the number of files simultaneously processed (number of files in the input folder).
+
+## Troubleshooting
+The Windows Terminal/Shell window displays any errors encountered and prints relevant information depending on the task performed.
+
+## Updates & Version History
+- **Version 1.0.0:** Initial Release
+- **Version 1.1.0:**
+    - Updated graphical user interface to a modern style
+    - Other user interface and quality of life updates
+    - Fixed – the application’s features only worked when 28 files were in the input folder
+- **Version 1.2.0 (In Development / Awaiting Release):**
+    - The equation to calculate the MFS was fixed before, however, could now be chosen by the user
+    - The radius to consider could be changed by the user now
