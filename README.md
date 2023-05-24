@@ -1,7 +1,5 @@
 # ResultsPostProcessor User Guide
 
-# Results Post Processor User Guide
-
 ## Table of Contents
 - [Introduction](#introduction)
     - [About the Application](#about-the-application)
@@ -23,10 +21,12 @@ The results processor is designed to streamline and mass-analyze the nodal resul
 The application only runs on Windows platforms, as of the latest version.
 
 ### Installation Guide
-Download and run the ResultsPotProcessor.exe file from the GitHub page. No installation is required.
+Download and run the ResultsPotProcessor.exe file from the [GitHub page](https://github.com/mafazsyed/ResultsPostProcessor). No installation is required.
 
 ### Overview of User Interface
-Figure 1 shows the user interface of the application with reference to each chapter for the feature’s user guide.
+Figure 1 shows the user interface of the application.
+
+<img src="https://github.com/mafazsyed/ResultsPostProcessor/assets/120568449/a4994cec-8686-49de-9ec4-872b7a3aea17" width="500">
 
 ## Features & Functionality
 The following results post processing features are available:
@@ -41,9 +41,15 @@ The input file format for each function is outlined in their respective sections
 
 To calculate the average minimum principal strain for each node (where each node has one or more result values), first specify the input folder with all files (TXT or any other text-editor format) containing the input nodal results data in the format specified below.
 
+<img src="https://github.com/mafazsyed/ResultsPostProcessor/assets/120568449/8f250ad7-24e4-44f9-b66a-f67d96c16d87" width="500">
+
 #### Input Nodal Results File Format
 
-The input file should contain, on each line, the node number followed by its result (average minimum principal strain) value. Note that a heading should not be included, and the nodes do not have to be in chronological order. There is no limit on the number of nodes or on the number of files simultaneously processed (number of files in the input folder).
+The input file should contain, on each line, the node number followed by its result (average minimum principal strain) value. An example is shown below:
+
+<img src="https://github.com/mafazsyed/ResultsPostProcessor/assets/120568449/3acb7102-5840-4ebb-b94c-541a3cba6280" width="500">
+
+Note that a heading should not be included, and the nodes do not have to be in chronological order. There is no limit on the number of nodes or on the number of files simultaneously processed (number of files in the input folder).
 
 ### Average Minimum Principal Strain & Minimum Femur Strength When Considering Each Node as Center Node
 
@@ -51,9 +57,15 @@ The input file should contain, on each line, the node number followed by its res
 
 To calculate the average minimum principal strain and Minimum Femur Strength, first specify the input folder with all files (TXT or any other text-editor format) containing the input nodal results and coordinate data in the format specified below.
 
+<img src="https://github.com/mafazsyed/ResultsPostProcessor/assets/120568449/4443ddf2-a913-4811-a058-d8018ceaf633" width="500">
+
 #### Input Nodal Results & Coordinates File Format
 
-The input file should contain, on each line, the node number followed by its result (averaged minimum principal strain) and its coordinates. Note that a heading should not be included, and the nodes do not have to be in chronological order. There is no limit on the number of nodes or on the number of files simultaneously processed (number of files in the input folder).
+The input file should contain, on each line, the node number followed by its result (averaged minimum principal strain) and its coordinates. 
+
+<img src="https://github.com/mafazsyed/ResultsPostProcessor/assets/120568449/9e0d9309-548c-4b83-992c-5c4112413a21" width="500">
+
+Note that a heading should not be included, and the nodes do not have to be in chronological order. There is no limit on the number of nodes or on the number of files simultaneously processed (number of files in the input folder).
 
 ## Troubleshooting
 The Windows Terminal/Shell window displays any errors encountered and prints relevant information depending on the task performed.
