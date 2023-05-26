@@ -18,7 +18,7 @@
 The results processor is designed to streamline and mass-analyze the nodal results (of finite element analysis of a femur but could be used for many other purposes). The application is capable of processing and averaging nodal results (as each node contains results from several elements). This information (result of each node) could be fed back into the application to produce the average minimum principal strain and, subsequently, the Minimum Femur Strength when considering each node as the center node of a 3mm radius circle.
 
 ### System Requirements
-The application only runs on Windows platforms, as of the latest version.
+The latest version of the application operates on Windows platforms, but it could be run on Linux using the Wine compatibility layer.
 
 ### Installation Guide
 Download and run the ResultsPotProcessor.exe file from the [GitHub page](https://github.com/mafazsyed/ResultsPostProcessor). No installation is required.
@@ -81,3 +81,4 @@ The Windows Terminal/Shell window displays any errors encountered and prints rel
 - **Version 1.2.0 (In Development / Awaiting Release):**
     - The equation to calculate the MFS was fixed before, however, could now be chosen by the user
     - The radius to consider could be changed by the user now
+    - Looking at options for MacOS compatibility
