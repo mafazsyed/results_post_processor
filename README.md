@@ -18,10 +18,10 @@
 The results processor is designed to streamline and mass-analyze the nodal results (of finite element analysis of a femur but could be used for many other purposes). The application is capable of processing and averaging nodal results (as each node contains results from several elements). This information (result of each node) could be fed back into the application to produce the average minimum principal strain and, subsequently, the Minimum Femur Strength when considering each node as the center node of a 3mm radius circle.
 
 ### System Requirements
-The latest version of the application operates on Windows platforms, but it could be run on Linux using the Wine compatibility layer. Better Linux and MacOS compatibility are in development.
+The latest version of the application supports Windows and Linux operating systems.
 
 ### Installation Guide
-Download and run the ResultsPotProcessor.exe file from the [GitHub page](https://github.com/mafazsyed/ResultsPostProcessor). No installation is required.
+Download and run the ResultsPotProcessor1.1.0.exe file (or ResultsPotProcessor1.1.0_ubuntu for Linux) from the [GitHub page](https://github.com/mafazsyed/ResultsPostProcessor). No installation is required.
 
 ### Overview of User Interface
 Figure 1 shows the user interface of the application.
@@ -77,8 +77,9 @@ The Windows Terminal/Shell window displays any errors encountered and prints rel
     - Updated graphical user interface to a modern style
     - Other user interface and quality of life updates
     - Fixed – the application’s features only worked when 28 files were in the input folder
+    - Added Linux support/compatibility
 
 - **Version 1.2.0 (In Development / Awaiting Release):**
     - The equation to calculate the MFS was fixed before, however, could now be chosen by the user
     - The radius to consider could be changed by the user now
-    - Looking at options to add MacOS (and direct Linux instead of using Wine) compatibility
+    - Looking at options to add MacOS compatibility
