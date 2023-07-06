@@ -78,8 +78,11 @@ The Windows Terminal/Shell window displays any errors encountered and prints rel
     - Other user interface and quality of life updates
     - Fixed – the application’s features only worked when 28 files were in the input folder
     - Added Linux support/compatibility
+ 
+- **Version 1.2.0:**
+    - Minor Error Fixes in the 'About' Window
 
-- **Version 1.2.0 (In Development / Awaiting Release):**
+- **Version 1.3.0 (In Development / Awaiting Release):**
     - The equation to calculate the MFS was fixed before, however, could now be chosen by the user
     - The radius to consider could be changed by the user now
     - Looking at options to add MacOS compatibility
